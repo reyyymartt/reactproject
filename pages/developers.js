@@ -11,9 +11,7 @@ const devs = [
 class MainPage extends React.Component{
  
  
- 
- 
- render (){
+  render (){
   const cardbod={
    margin:'5px'
   }
@@ -25,10 +23,10 @@ class MainPage extends React.Component{
   }
   
   const devslist = devs.map(dev=>
-  <div style={cardbod} key={dev.id} className="text-center col-sm-5 bg-light card-body">
+  <div style={cardbod} key={dev.id} className="text-center col-sm-5 bg-light border rounded">
   <img style={imgStyle} src={dev.img} alt={dev.name} className="rounded"></img>
   <i><h5>{dev.name}</h5></i>
-  <p>{dev.des?dev.des:'description'}</p>
+  <p>{dev.des?dev.des:'no description provided'}</p>
   </div>
   )
   

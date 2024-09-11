@@ -22,7 +22,7 @@ class APage extends React.Component{
    function (){
    navigate('home')
    }
-   } className="btn btn-danger" >Change to home</button>
+   } className="btn btn-danger" >Go to home<i data-feather='home'>home</i></button>
    </div>
    )
  }

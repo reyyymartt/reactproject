@@ -16,7 +16,7 @@ const hiddenRoutes={
  'viewdevs': null
 }
 
-ReactDOM.render(HomePage(),content)
+navigate('home')
  
 function navigate (route){
  for (const x in routes){
@@ -28,6 +28,7 @@ function navigate (route){
  navbtn.parentElement.classList.add('active')
  
  ReactDOM.render(routes[route],content)
+ feather.replace()
 }
 
 for (const x in routes){
@@ -43,7 +44,7 @@ for (const x in routes){
  
 }
  
-feather.replace()
+
 
 
 //exports
