@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 const devs = [
- {id:1,name:'Rey',des:'Hi?',img:'/assets/me.jpg'},
+ {id:1,name:'Rey',des:'Sup lil nigs',img:'/assets/me.jpg'},
  {id:2,name:'Jasper',img:'...'},
  {id:3,name:'Jed',img:'...'},
  {id:4,name:'Regie',img:'...'}
