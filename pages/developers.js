@@ -24,8 +24,7 @@ class MainPage extends React.Component{
   
   const devslist = devs.map(dev=>
   <div style={cardbod} key={dev.id} className="text-center col-sm-5 bg-light border rounded">
-  <img style={imgStyle} src={dev.img} alt={dev.name} className="rounded"></img>
-  <i><h5>{dev.name}</h5></i>
+  <i><h1>{dev.name}</h1></i>
   <p>{dev.des?dev.des:'no description provided'}</p>
   </div>
   )
@@ -33,14 +32,10 @@ class MainPage extends React.Component{
   return (
    <div>
    <div className="container">
-   
    <div className="row">
    {devslist}
    </div>
-   
    </div>
-   
-   
    </div>
   )
  }
