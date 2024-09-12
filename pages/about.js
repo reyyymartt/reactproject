@@ -36,6 +36,6 @@ class APage extends React.Component{
 
 export default function AboutPage() {
  return (
-  <APage tit='Test title' txt='Sup Kneegas'/>
+  <APage tit='About page title' txt='Test Description'/>
   )
 }
