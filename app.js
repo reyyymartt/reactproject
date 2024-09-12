@@ -16,18 +16,19 @@ const hiddenRoutes={
  'viewdevs': null
 }
 
-navigate('home')
+navigate(null)
  
 function navigate (route){
  for (const x in routes){
   const btn = document.querySelector(`a[data-route=${x}]`)
   btn.parentElement.classList.remove('active')
  }
+ const direction = routes[route]?route:'home'
+ const navbtn = document.querySelector(`a[data-route=${direction}]`)
  
- const navbtn = document.querySelector(`a[data-route=${route}]`)
+/* navbtn.parentElement.classList.add('active')*/
  navbtn.parentElement.classList.add('active')
- 
- ReactDOM.render(routes[route],content)
+ ReactDOM.render(routes[direction],content)
  feather.replace()
 }
 
@@ -43,7 +44,6 @@ for (const x in routes){
  }
  
 }
- 
 
 
 

@@ -26,9 +26,9 @@ class APage extends React.Component{
    </div>
    <button onClick={
    function (){
-   navigate('home')
+   navigate('nyanya')
    }
-   } className="m-2 btn btn-danger" >Go to home</button>
+   } className="m-2 btn btn-info" >Go to home</button>
    </div>
    )
  }
